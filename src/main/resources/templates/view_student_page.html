@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML xmlns:th="https://www.thymeleaf.org">
+	<TITLE>Student Form</TITLE>
+	<head>
+	</head>
+	<body>
+		<div align=center>
+			<table>
+				<thead>
+					<tr>
+						<td><h1>Student Details </h2></td>
+					</tr>
+					<tr>
+						<td><h1>-------------------------------</h2></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><h4><span th:text="${respStudentEntity.id}"></span></h4></td>
+					</tr>
+					<tr>
+						<td><h4><span th:text="${respStudentEntity.name}"></span></h4></td>
+					</tr>
+					<tr>
+						<td><h4><span th:text="${respStudentEntity.address}"></span></h4></td>
+					</tr>
+					<tr>
+						<td><h4><span th:text="${respStudentEntity.gender}"></span></h4></td>
+					</tr>
+					<br>
+					<tr>
+						<td><h4>Student details saved successfully</h4></td>
+					</tr>
+					
+				</tbody>
+				
+			</table>
+		</div>
+	</body>

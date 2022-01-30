@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<HTML xmlns:th="https://www.thymeleaf.org">
+	<TITLE>Student Form</TITLE>
+	<head>
+	</head>
+	<body>
+	
+		<form class="form" action="#" th:action="@{/students/getStudent}" th:object="${studentEntity}" method="GET">
+		
+			<table align="center">
+				<thead>
+					<tr>
+						<td><h2>Get Student Details</h2></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<label for="id">Id:</label>
+						</td>
+						<td>
+							<input type="number" th:field="*{id}" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"  align="center">
+							<input type="submit" value="submit" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
